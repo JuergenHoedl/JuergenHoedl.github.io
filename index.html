@@ -6,19 +6,22 @@
     <title>Aioncoscan.com - For Sale</title>
     <style>
         body {
-            background-image: url('background.webp'); /* Add the background image */
+            background-image: url('background.webp'); /* Background image */
             background-size: cover;  /* Make the image cover the entire screen */
             background-position: center;  /* Center the image */
             background-attachment: fixed;  /* Keep the image fixed when scrolling */
-            background-color: #8abdff; 
-            color: #555; 
+            color: #333;  /* Dark gray text */
             display: flex;
             justify-content: flex-start;  /* Align items to the top of the screen */
             align-items: center;
-            height: 100vh;
             text-align: center;
             font-family: Arial, sans-serif;
             flex-direction: column;
+            margin: 0;  /* Remove default margin */
+            overflow: hidden;  /* Prevent scrolling */
+            height: 100vh;  /* Ensure the body takes up the full viewport height */
+        }
+        .content {
             padding-top: 20%;  /* Move content towards the upper half */
         }
         h1 {
@@ -30,7 +33,9 @@
     </style>
 </head>
 <body>
-    <h1>AiOncoScan.com is For Sale!</h1>
-    <p>This premium domain is available for purchase. Contact us at <strong>contact@aioncoscan.com</strong> for offers.</p>
+    <div class="content">
+        <h1>AiOncoScan.com is For Sale!</h1>
+        <p>This premium domain is available for purchase. Contact us at <strong>contact@aioncoscan.com</strong> for offers.</p>
+    </div>
 </body>
 </html>
